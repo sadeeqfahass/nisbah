@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #e0e0e0;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Nav starts here */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+}
+
+.nav .search {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 30rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav .sign-in {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Main Section starts here */
+
+.main {
+  display: flex;
+  /* gap: 1rem; */
+}
+
+/* Card starts here */
+
+.cards {
+  padding: 0 1rem;
+  width: 50%;
+  height: 88vh;
+  overflow: auto;
+}
+
+.cards .cards-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards .cards-header .title h1 {
+  margin-bottom: 0;
+}
+
+.cards .cards-header .title p {
+  margin-top: 0;
+  color: #a6a6a6;
+}
+
+.cards .cards-header .sort span {
+  color: #a6a6a6;
+}
+
+.cards .cards-nav {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  padding: 1rem 0;
+  /* width: 100%; */
+  /* background-color: red; */
+}
+
+.cards-nav-btn {
+    width: 10rem;
+    background: darkblue;
   }
-  to {
-    transform: rotate(360deg);
+
+.cards .cards-con .card {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.cards .cards-con .card .card-img {
+  background: #a6a6a6;
+  width: 50%;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.cards .cards-con .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.cards .cards-con .card .card-text {
+  width: 50%;
+}
+
+.cards .cards-con .card .card-text .card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .cards-con .card .card-text .card-title .text h4 {
+  font-size: 0.9rem;
+  margin: 0;
+  width: 90%;
+}
+
+.cards .cards-con .card .card-text .card-title .text p {
+  margin-top: 5px;
+  color: #a6a6a6;
+}
+
+.cards .cards-con .card .card-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #a6a6a6;
+}
+
+.cards .cards-con .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards .cards-con .card .card-bottom .offer {
+  color: #a6a6a6;
+  font-size: 0.9rem;
+}
+
+.cards .cards-con .card .card-bottom .price p {
+  font-weight: bold;
+  color: #fb6724;
+}
+
+/* Map starts here */
+
+.map-con {
+  width: 50%;
+  padding: 1rem;
+}
+
+.map iframe {
+  border-radius: 20px;
+}
+
+/* Media Query Large */
+
+@media (max-width: 786px) {
+  .cards .cards-con .card {
+    flex-direction: column;
+  }
+
+  .cards .cards-con .card .card-img,
+  .cards .cards-con .card .card-text {
+    width: 100%;
+  }
+
+  .cards .cards-nav {
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    width: 52%;
+  }
+
+  .cards-nav-btn {
+    width: 10rem;
+  }
+}
+
+/* Media Query Small */
+
+@media (max-width: 586px) {
+  .nav .search {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main .cards {
+    width: 90%;
+  }
+
+  .main .map-con {
+    display: none;
+  }
+
+  .cards .cards-nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards-nav-btn {
+    padding: 0 2rem;
+    width: 10rem;
+  }
+
+  .cards .cards-con .card {
+    flex-direction: column;
+  }
+
+  .cards .cards-con .card .card-img,
+  .cards .cards-con .card .card-text {
+    width: 100%;
   }
 }
