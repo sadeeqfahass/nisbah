@@ -156,6 +156,21 @@ body {
   border-radius: 20px;
 }
 
+.signup-con {
+    width: 50%;
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.login-con {
+    width: 50%;
+    background: #fff;
+    margin:  auto;
+    padding: 10px 15px;
+}
+
+
 /* Media Query Large */
 
 @media (max-width: 786px) {
@@ -177,6 +192,11 @@ body {
 
   .cards-nav-btn {
     width: 10rem;
+  }
+
+  .signup-con,
+  .login-con {
+    width: 90%;
   }
 }
 
