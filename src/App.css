@@ -23,7 +23,6 @@ body {
 }
 
 
-
 /* Media Query Large */
 
 @media (max-width: 786px) {
@@ -46,6 +45,7 @@ body {
   }
 
   .btn-con {
+    flex-wrap: wrap;
     flex-direction: column;
   }
 

@@ -20,7 +20,7 @@ function Hero() {
             Earum nostrum obcaecati totam tempore perspiciatis enim ipsum
             officia exercitationem sed iusto!
           </p>
-          <div className="btn-con mt-5 flex flex-wrap items-center gap-4">
+          <div className="btn-con mt-5 flex items-center gap-4">
             <ActionButtons
               icon={<AppleIcon sx={{fontSize:"3rem"}} fontSize="large" />}
               topText="Download on the"
