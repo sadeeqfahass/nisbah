@@ -2,13 +2,14 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer flex items-center content-center p-8 bg-[#5c0c0c]">
-      <p>
+    <div className="footer p-6 bg-[#5c0c0c]">
+      <p className="text-center">
         Powered by
-        <a href="https://mmt-ng.com/" className="italic underline">
+        {"  "} 
+        <a href="https://mmt-ng.com/" target="_blank" className="italic">
           {" "}
           Mastermind Tech
-        </a>{" "}
+        </a> {" "}
         &copy; All rights reserved
       </p>
     </div>

@@ -74,7 +74,7 @@ const ReviewCarousel = () => {
               alt={review.name}
               className="w-24 h-24 rounded-full mb-4"
             />
-            <h3 className="text-lg text-red-400 font-semibold">
+            <h3 className="text-lg text-[#5c0c0c] font-semibold">
               {review.name}
             </h3>
             <p className="text-gray-600 italic mt-2">{review.text}</p>
@@ -89,7 +89,7 @@ const ReviewCarousel = () => {
           onClick={handlePrev}
           className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white"
         >
-          <ArrowBack sx={{color:"#000"}} />
+          <ArrowBack sx={{color:"#5c0c0c"}} />
         </IconButton>
 
         {/* Next Button */}
@@ -97,7 +97,7 @@ const ReviewCarousel = () => {
           onClick={handleNext}
           className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white"
         >
-          <ArrowForward sx={{color:"#000"}} />
+          <ArrowForward sx={{color:"#5c0c0c"}} />
         </IconButton>
       </div>
     </div>
