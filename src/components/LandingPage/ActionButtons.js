@@ -1,15 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ActionButtons({ icon, topText, bottomText }) {
-  const redirectlink = () => {
-    const anchorTag = document.createElement("a");
-    anchorTag.href = "https://mmt-ng.com/";
-    anchorTag.target = "__blank";
+function ActionButtons({ icon, topText, bottomText, link }) {
+  const redirectlink = (storeLink) => {
+    window.open(storeLink, "_blank");
   };
 
   return (
-    <div onClick={redirectlink} className="btn bg-black flex items-center rounded-md w-52 py-2 shadow-2xl cursor-pointer hover:translate-y-1 transition-transform">
+    <div
+      onClick={() => redirectlink(link)}
+      className="btn bg-black flex items-center rounded-md w-52 py-2 shadow-2xl cursor-pointer hover:translate-y-1 transition-transform"
+    >
       {/* <AppleIcon sx={{ fontSize: "3rem" }} fontSize="large" /> */}
       {icon}
       <div className="btn-text">

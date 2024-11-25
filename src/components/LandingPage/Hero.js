@@ -6,7 +6,7 @@ import ActionButtons from "./ActionButtons";
 import { useNavigate } from "react-router-dom";
 
 function Hero() {
-    const Navigate = useNavigate()
+  const Navigate = useNavigate();
 
   return (
     <div className="hero-section h-screen pb-5">
@@ -14,7 +14,7 @@ function Hero() {
       <div className="main flex justify-center items-center my-10 ">
         <div className="left w-1/3 px-4">
           <h1 className="heading text-4xl font-semibold mb-4">
-            Lorem ipsum dolor sit amet consectetur 
+            Lorem ipsum dolor sit amet consectetur
           </h1>
           <p className="sub-heading text-sm">
             Earum nostrum obcaecati totam tempore perspiciatis enim ipsum
@@ -22,15 +22,18 @@ function Hero() {
           </p>
           <div className="btn-con mt-5 flex items-center gap-4">
             <ActionButtons
-              icon={<AppleIcon sx={{fontSize:"3rem"}} fontSize="large" />}
+              icon={<AppleIcon sx={{ fontSize: "3rem" }} fontSize="large" />}
               topText="Download on the"
               bottomText="App Store"
+              link="https://www.apple.com/app-store/"
             />
             <ActionButtons
-              icon={<PlayArrowIcon sx={{fontSize:"3rem"}} fontSize="large" />}
+              icon={
+                <PlayArrowIcon sx={{ fontSize: "3rem" }} fontSize="large" />
+              }
               topText="Get it on"
               bottomText="Google Play"
-              
+              link="https://play.google.com/store"
             />
           </div>
         </div>

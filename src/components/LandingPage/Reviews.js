@@ -3,7 +3,7 @@ import ReviewCarousel from './ReviewCarousel'
 
 function Reviews() {
   return (
-    <div className='review-section bg-black py-20'>
+    <div className='review-section bg-gray-100 py-20'>
       <ReviewCarousel />
     </div>
   )

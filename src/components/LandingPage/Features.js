@@ -30,7 +30,7 @@ function Features() {
   ];
 
   return (
-    <div className="features-section py-10 flex flex-wrap items-center justify-center gap-6">
+    <div className="features-section py-20 flex flex-wrap items-center justify-center gap-6">
       {features.map((card, index) => (
         <div
           key={index}
